@@ -7,6 +7,7 @@ import SecondaryButton from "@/components/SecondaryButton";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollLink from "@/components/ScrollLink";
+import MovingDiv from "@/components/MovingDiv";
 
 export default function Home() {
   return (
@@ -33,19 +34,24 @@ export default function Home() {
             <SecondaryButton>About us</SecondaryButton>
           </ScrollLink>
         </div>
+
         <div className={"z-10 absolute top-36 right-0"}>
-          <Image
-            src={Result1}
-            alt={"result1"}
-            className={
-              "rounded-xl w-[25rem]  absolute -left-24 top-52 shadow-xl"
-            }
-          />
-          <Image
-            src={Result2}
-            alt={"result2"}
-            className={"rounded-xl w-[25rem] shadow-xl"}
-          />
+          <MovingDiv leftToRight={true}>
+            <Image
+              src={Result1}
+              alt={"result1"}
+              className={
+                "rounded-xl w-[25rem]  absolute -left-24 top-52 shadow-xl"
+              }
+            />
+          </MovingDiv>
+          <MovingDiv leftToRight={false}>
+            <Image
+              src={Result2}
+              alt={"result2"}
+              className={"rounded-xl w-[25rem] shadow-xl"}
+            />
+          </MovingDiv>
           <div
             className={
               "-z-20 w-64 h-64 blur-2xl rounded-full absolute -right-12 -bottom-44 bg-gradient-to-r from-blue-300 to-purple-200"
@@ -58,38 +64,42 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className={"w-full mt-64 pb-64 h-fit items-center"}>
+      <div className={"w-full mt-64 pb-72 h-fit items-center"}>
         <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
-        <div className={"pt-64 flex"} id={"about"}>
+        <div className={"pt-72 flex"} id={"about"}>
           <div className={"flex-1 relative"}>
             <div className={"z-10 absolute -top-20"}>
-              <div
-                className={
-                  "rounded-xl w-[17rem] h-[17rem] absolute flex bg-white items-center " +
-                  "justify-center left-56 top-40 shadow-2xl"
-                }
-              >
-                <Image
-                  src={HatcheryLogo}
-                  alt={"Hatchery"}
-                  className={"w-[12rem]"}
-                />
-              </div>
-              <div
-                className={
-                  "rounded-xl w-[17rem] h-[17rem] flex bg-white items-center " +
-                  "justify-center shadow-2xl"
-                }
-              >
-                <div className={"text-center text-wrap"}>
-                  <div className={"align-baseline space-x-2"}>
-                    <h1 className={"font-bold text-6xl inline-block"}>40</h1>
-                    <div className={"w-3 h-3 bg-primary inline-block"} />
-                  </div>
-                  <h2 className={"text-xl"}>Days until</h2>
-                  <h2 className={"text-xl"}>we launch</h2>
+              <MovingDiv leftToRight={true}>
+                <div
+                  className={
+                    "rounded-xl w-[17rem] h-[17rem] absolute flex bg-white items-center " +
+                    "justify-center left-64 top-52 shadow-2xl"
+                  }
+                >
+                  <Image
+                    src={HatcheryLogo}
+                    alt={"Hatchery"}
+                    className={"w-[12rem]"}
+                  />
                 </div>
-              </div>
+              </MovingDiv>
+              <MovingDiv leftToRight={false}>
+                <div
+                  className={
+                    "rounded-xl w-[17rem] h-[17rem] flex bg-white items-center " +
+                    "justify-center shadow-2xl"
+                  }
+                >
+                  <div className={"text-center text-wrap"}>
+                    <div className={"align-baseline space-x-2"}>
+                      <h1 className={"font-bold text-6xl inline-block"}>3</h1>
+                      <div className={"w-3 h-3 bg-primary inline-block"} />
+                    </div>
+                    <h2 className={"text-xl"}>Months until</h2>
+                    <h2 className={"text-xl"}>we launch</h2>
+                  </div>
+                </div>
+              </MovingDiv>
             </div>
           </div>
           <div className={"space-y-5 w-[40rem] pl-5 pr-5"}>
