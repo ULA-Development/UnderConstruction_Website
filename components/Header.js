@@ -1,8 +1,8 @@
 import Logo from "@/svgs/plus-circle-solid.svg";
-
 import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
+import ScrollLink from "@/components/ScrollLink";
 export default function Header() {
   return (
     <div
@@ -18,8 +18,12 @@ export default function Header() {
       </button>
 
       <div className={"flex space-x-6 items-center text-tBlack f"}>
-        <button className={"hover:text-primary"}>Home</button>
-        <button className={"hover:text-primary"}>About</button>
+        <ScrollLink to={"#home"}>
+          <button className={"hover:text-primary"}>Home</button>
+        </ScrollLink>
+        <ScrollLink to={"#about"}>
+          <button className={"hover:text-primary"}>About</button>
+        </ScrollLink>
         <Link
           href={"https://www.linkedin.com/company/ula-healthcare-systems"}
           target={"_blank"}
