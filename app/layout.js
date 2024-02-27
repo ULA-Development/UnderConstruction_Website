@@ -1,7 +1,7 @@
-import { Rubik } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "@/styles/globals.css";
 
-const rubik = Rubik({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ULA",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
