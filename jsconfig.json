@@ -5,7 +5,7 @@
       "@/styles/*": ["styles/*"],
       "@/svgs/*" : ["public/svgs/*"],
       "@/images/*" : ["public/images/*"],
-      "@/components/*" : ["components/*"]
+      "@/components/*" : ["components/*"],
     }
   }
 }
