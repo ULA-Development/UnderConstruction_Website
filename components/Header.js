@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div
       className={
-        "w-full items-center justify-between text-xl flex text-tBlack "
+        "lg:max-w-6xl lg:w-full items-center justify-between text-xl flex text-tBlack "
       }
     >
       <button

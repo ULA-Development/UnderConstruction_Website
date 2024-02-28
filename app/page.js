@@ -11,9 +11,13 @@ import MovingDiv from "@/components/MovingDiv";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col pt-10 pl-10 pr-10">
+    <main className="flex min-h-screen items-center flex-col pt-10 pl-10 pr-10">
       <Header />
-      <div className={"pt-64 space-y-5 flex-col relative"} id={"home"}>
+      {/*Home page*/}
+      <div
+        className={"pt-64 space-y-5 lg:max-w-6xl lg:w-full flex-col relative"}
+        id={"home"}
+      >
         <div className={"font-bold text-[2.5rem] leading-10 space-y-1"}>
           <h1>Coming soon,</h1>
           <h1>We are changing</h1>
@@ -34,8 +38,8 @@ export default function Home() {
             <SecondaryButton>About us</SecondaryButton>
           </ScrollLink>
         </div>
-
-        <div className={"z-10  lg:absolute top-36 right-0"}>
+        {/*Bubble section*/}
+        <div className={"z-10  relative top-36 right-0"}>
           <MovingDiv leftToRight={true}>
             <Image
               src={Result2}
@@ -64,6 +68,7 @@ export default function Home() {
           />
         </div>
       </div>
+      {/*About page*/}
       <div className={"w-full mt-64 pb-72 h-fit md:flex-colitems-center"}>
         <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
         <div className={"pt-72 flex"} id={"about"}>
