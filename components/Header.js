@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div
       className={
-        "lg:max-w-6xl lg:w-full items-center justify-between text-xl flex text-tBlack "
+        "lg:max-w-6xl w-full items-center justify-between flex text-tBlack "
       }
     >
       <button
@@ -17,7 +17,7 @@ export default function Header() {
         <text className={"font-semibold text-3xl pl-2"}>Ula Healthcare </text>
       </button>
 
-      <div className={"lg:flex hidden space-x-6 items-center text-tBlack f"}>
+      <div className={"flex space-x-6 items-center text-xl text-tBlack"}>
         <ScrollLink to={"#home"}>
           <button className={"hover:text-primary"}>Home</button>
         </ScrollLink>
@@ -27,6 +27,7 @@ export default function Header() {
         <Link
           href={"https://www.linkedin.com/company/ula-healthcare-systems"}
           target={"_blank"}
+          className={"hidden md:hidden lg:block"}
         >
           <Button>Connect</Button>
         </Link>

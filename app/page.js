@@ -14,21 +14,26 @@ export default function Home() {
     <main className="flex min-h-screen items-center flex-col pt-10 pl-10 pr-10">
       <Header />
       {/*Home page*/}
-
       <div
-        className={"pt-64  lg:max-w-6xl lg:w-full flex flex-col lg:flex-row"}
+        className={
+          "lg:pt-64 pt-40 lg:max-w-6xl w-full lg:w-full flex flex-col lg:flex-row"
+        }
         id={"home"}
       >
+        {/*Info section*/}
         <div className={"flex-col flex-1 space-y-3 justify-center flex"}>
-          <div className={"font-bold text-[2.5rem] leading-10 space-y-1"}>
+          <div
+            className={"font-bold text-[2.5rem] leading-10 space-y-1 text-wrap"}
+          >
             <h1>Coming soon,</h1>
-            <h1>We are changing</h1>
-            <h1>the healthcare industry</h1>
+            <h1 className={"text-wrap"}>
+              We are changing the healthcare industry
+            </h1>
           </div>
-          <div className={"text-lg"}>
-            <h2>Ula Healthcare Systems is commited to providing</h2>
-            <h2>the best services for you.</h2>
-          </div>
+          <h2 className={"text-lg text-wrap"}>
+            Ula Healthcare Systems is commited to providing the best services
+            for you.
+          </h2>
           <div className={"flex space-x-3"}>
             <Link
               href={"https://www.linkedin.com/company/ula-healthcare-systems"}
@@ -37,20 +42,20 @@ export default function Home() {
               <Button>Linkedin </Button>
             </Link>
             <ScrollLink to={"#about"}>
-              <SecondaryButton>About us</SecondaryButton>
+              <SecondaryButton>About</SecondaryButton>
             </ScrollLink>
           </div>
         </div>
         {/*Bubble section*/}
-        <div class="relative h-80 w-[40rem]">
-        <div
+        <div className={"relative mt-40 lg:mt-0 h-80 lg:w-[40rem] w-full"}>
+          <div
             className={
-              " w-64 h-64 blur-2xl rounded-full absolute right-0 top-24 bg-gradient-to-r from-blue-300 to-purple-200"
+              " w-64 h-64 blur-2xl rounded-full absolute left-1/2 top-24 bg-gradient-to-r from-blue-300 to-purple-200"
             }
           />
           <div
             className={
-              " w-64 h-64 blur-2xl rounded-full absolute left-10 top-10 bg-gradient-to-r from-blue-300 to-green-200"
+              " w-64 h-64 blur-2xl rounded-full absolute left-[18%] -top-10 bg-gradient-to-r from-blue-300 to-green-200"
             }
           />
           <MovingDiv leftToRight={true}>
@@ -58,7 +63,7 @@ export default function Home() {
               src={Result2}
               alt={"result1"}
               className={
-                "rounded-xl w-[25rem] absolute top-32 left-20 shadow-xl"
+                "rounded-xl w-[25rem] absolute top-32 right-1/3 shadow-xl"
               }
             />
           </MovingDiv>
@@ -66,82 +71,67 @@ export default function Home() {
             <Image
               src={Result1}
               alt={"result2"}
-              className={"rounded-xl w-[25rem] absolute right-16 -top-20 shadow-xl"}
+              className={
+                "rounded-xl w-[25rem] absolute left-1/3 -top-20 shadow-xl"
+              }
             />
           </MovingDiv>
-          
         </div>
-        {/* <div className={"z-10 pl-32 bg-red-400 relative"}>
-
-          <MovingDiv leftToRight={true}>
-            <Image
-              src={Result2}
-              alt={"result1"}
-              className={
-                "rounded-xl w-[25rem] absolute -left-24 top-52 shadow-xl"
-              }
-            />
-          </MovingDiv>
-          <MovingDiv leftToRight={false}>
-            <Image
-              src={Result1}
-              alt={"result2"}
-              className={"rounded-xl w-[25rem] shadow-xl"}
-            />
-          </MovingDiv>
-          <div
-            className={
-              "-z-20 w-64 h-64 blur-2xl rounded-full absolute -right-12 -bottom-44 bg-gradient-to-r from-blue-300 to-purple-200"
-            }
-          />
-          <div
-            className={
-              "-z-20 w-64 h-64 blur-2xl rounded-full absolute top-10 right-64 bg-gradient-to-r from-blue-300 to-green-200"
-            }
-          />
-
-        </div> */}
       </div>
+
       {/*About page*/}
-      <div className={"w-full mt-64 pb-72 h-fit md:flex-colitems-center"}>
+      <div
+        className={"pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center"}
+      >
         <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
-        <div className={"pt-72 flex"} id={"about"}>
-          <div className={"flex-1 relative"}>
-            <div className={"z-10 absolute -top-20"}>
-              <MovingDiv leftToRight={true}>
-                <div
-                  className={
-                    "rounded-xl w-[17rem] h-[17rem] absolute flex bg-white items-center " +
-                    "justify-center left-64 top-52 shadow-2xl"
-                  }
-                >
-                  <Image
-                    src={HatcheryLogo}
-                    alt={"Hatchery"}
-                    className={"w-[12rem]"}
-                  />
-                </div>
-              </MovingDiv>
-              <MovingDiv leftToRight={false}>
-                <div
-                  className={
-                    "rounded-xl w-[17rem] h-[17rem] flex bg-white items-center " +
-                    "justify-center shadow-2xl"
-                  }
-                >
-                  <div className={"text-center text-wrap"}>
-                    <div className={"align-baseline space-x-2"}>
-                      <h1 className={"font-bold text-6xl inline-block"}>3</h1>
-                      <div className={"w-3 h-3 bg-primary inline-block"} />
-                    </div>
-                    <h2 className={"text-xl"}>Months until</h2>
-                    <h2 className={"text-xl"}>we launch</h2>
+        <div
+          className={"lg:pt-64 lg:max-w-6xl w-full flex flex-col lg:flex-row"}
+          id={"about"}
+        >
+          {/*Floating section*/}
+          <div
+            className={
+              "relative hidden lg:block mt-40 mb-20 lg:mt-0 lg:mb-0 h-80 lg:w-[35rem] w-full"
+            }
+          >
+            <MovingDiv leftToRight={true}>
+              <div
+                className={
+                  "rounded-xl w-[17rem] h-[17rem] absolute left-1/2 top-24 flex bg-white items-center " +
+                  "justify-center shadow-2xl"
+                }
+              >
+                <Image
+                  src={HatcheryLogo}
+                  alt={"Hatchery"}
+                  className={"w-[12rem]"}
+                />
+              </div>
+            </MovingDiv>
+            <MovingDiv leftToRight={false}>
+              <div
+                className={
+                  "rounded-xl w-[17rem] h-[17rem] absolute right-1/2 -top-24 flex bg-white items-center " +
+                  "justify-center shadow-2xl"
+                }
+              >
+                <div className={"text-center text-wrap"}>
+                  <div className={"align-baseline space-x-2"}>
+                    <h1 className={"font-bold text-6xl inline-block"}>3</h1>
+                    <div className={"w-3 h-3 bg-primary inline-block"} />
                   </div>
+                  <h2 className={"text-xl"}>Months until</h2>
+                  <h2 className={"text-xl"}>we launch</h2>
                 </div>
-              </MovingDiv>
-            </div>
+              </div>
+            </MovingDiv>
           </div>
-          <div className={"space-y-5 w-[40rem] pl-5 pr-5"}>
+          {/*Info section*/}
+          <div
+            className={
+              "mt-32 lg:mt-0 space-y-5 w-full flex-col flex flex-1 pl-5 pr-5"
+            }
+          >
             <h1 className={"font-bold text-[2rem]"}>What is our mission?</h1>
             <h2 className={"text-md text-wrap"}>
               Our mission is to address the challenges in the Ontario healthcare
@@ -155,7 +145,7 @@ export default function Home() {
                 href={"https://hatchery.engineering.utoronto.ca/"}
                 target={"_blank"}
               >
-                <Button>Learn more</Button>
+                <Button>Learn</Button>
               </Link>
               <Link
                 href={
@@ -163,8 +153,37 @@ export default function Home() {
                 }
                 target={"_blank"}
               >
-                <SecondaryButton>UofT Hatchery</SecondaryButton>
+                <SecondaryButton>Hatchery</SecondaryButton>
               </Link>
+            </div>
+          </div>
+          <div className={"lg:hidden "}>
+            <div
+              className={
+                "rounded-xl w-full h-[12rem] mt-12 flex bg-white items-center " +
+                "justify-center shadow-lg"
+              }
+            >
+              <div className={"text-center text-wrap"}>
+                <div className={"align-baseline space-x-2"}>
+                  <h1 className={"font-bold text-6xl inline-block"}>3</h1>
+                  <div className={"w-3 h-3 bg-primary inline-block"} />
+                </div>
+                <h2 className={"text-xl"}>Months until</h2>
+                <h2 className={"text-xl"}>we launch</h2>
+              </div>
+            </div>
+            <div
+              className={
+                "rounded-xl w-full h-[12rem] mt-5 flex bg-white items-center " +
+                "justify-center shadow-lg"
+              }
+            >
+              <Image
+                src={HatcheryLogo}
+                alt={"Hatchery"}
+                className={"w-[12rem]"}
+              />
             </div>
           </div>
         </div>
