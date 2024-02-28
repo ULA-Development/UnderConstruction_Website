@@ -11,7 +11,7 @@ import MovingDiv from "@/components/MovingDiv";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col pt-10 pl-64 pr-64">
+    <main className="flex min-h-screen flex-col pt-10 pl-10 pr-10">
       <Header />
       <div className={"pt-64 space-y-5 flex-col relative"} id={"home"}>
         <div className={"font-bold text-[2.5rem] leading-10 space-y-1"}>
@@ -35,10 +35,10 @@ export default function Home() {
           </ScrollLink>
         </div>
 
-        <div className={"z-10 absolute top-36 right-0"}>
+        <div className={"z-10  lg:absolute top-36 right-0"}>
           <MovingDiv leftToRight={true}>
             <Image
-              src={Result1}
+              src={Result2}
               alt={"result1"}
               className={
                 "rounded-xl w-[25rem]  absolute -left-24 top-52 shadow-xl"
@@ -47,7 +47,7 @@ export default function Home() {
           </MovingDiv>
           <MovingDiv leftToRight={false}>
             <Image
-              src={Result2}
+              src={Result1}
               alt={"result2"}
               className={"rounded-xl w-[25rem] shadow-xl"}
             />
@@ -64,7 +64,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className={"w-full mt-64 pb-72 h-fit items-center"}>
+      <div className={"w-full mt-64 pb-72 h-fit md:flex-colitems-center"}>
         <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
         <div className={"pt-72 flex"} id={"about"}>
           <div className={"flex-1 relative"}>

@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div
       className={
-        "w-full items-center justify-between text-xl lg:flex text-tBlack "
+        "w-full items-center justify-between text-xl flex text-tBlack "
       }
     >
       <button
@@ -17,7 +17,7 @@ export default function Header() {
         <text className={"font-semibold text-3xl pl-2"}>Ula Healthcare </text>
       </button>
 
-      <div className={"flex space-x-6 items-center text-tBlack f"}>
+      <div className={"lg:flex hidden space-x-6 items-center text-tBlack f"}>
         <ScrollLink to={"#home"}>
           <button className={"hover:text-primary"}>Home</button>
         </ScrollLink>

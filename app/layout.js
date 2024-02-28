@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ULA",
+  title: "Ula Heathcare",
   description: "ULA Healthcare Systems",
 };
 

@@ -1,8 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import HatcheryLogo from "@/images/UofTHatcheryLogo.png";
-
 const MovingDiv = (props) => {
   const [scrollOffset, setScrollOffset] = useState(0);
 
