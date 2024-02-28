@@ -14,38 +14,71 @@ export default function Home() {
     <main className="flex min-h-screen items-center flex-col pt-10 pl-10 pr-10">
       <Header />
       {/*Home page*/}
+
       <div
-        className={"pt-64 space-y-5 lg:max-w-6xl lg:w-full flex-col relative"}
+        className={"pt-64  lg:max-w-6xl lg:w-full flex flex-col lg:flex-row"}
         id={"home"}
       >
-        <div className={"font-bold text-[2.5rem] leading-10 space-y-1"}>
-          <h1>Coming soon,</h1>
-          <h1>We are changing</h1>
-          <h1>the healthcare industry</h1>
-        </div>
-        <div className={"text-lg"}>
-          <h2>Ula Healthcare Systems is commited to providing</h2>
-          <h2>the best services for you.</h2>
-        </div>
-        <div className={"flex space-x-3"}>
-          <Link
-            href={"https://www.linkedin.com/company/ula-healthcare-systems"}
-            target={"_blank"}
-          >
-            <Button>Linkedin </Button>
-          </Link>
-          <ScrollLink to={"#about"}>
-            <SecondaryButton>About us</SecondaryButton>
-          </ScrollLink>
+        <div className={"flex-col flex-1 space-y-3 justify-center flex"}>
+          <div className={"font-bold text-[2.5rem] leading-10 space-y-1"}>
+            <h1>Coming soon,</h1>
+            <h1>We are changing</h1>
+            <h1>the healthcare industry</h1>
+          </div>
+          <div className={"text-lg"}>
+            <h2>Ula Healthcare Systems is commited to providing</h2>
+            <h2>the best services for you.</h2>
+          </div>
+          <div className={"flex space-x-3"}>
+            <Link
+              href={"https://www.linkedin.com/company/ula-healthcare-systems"}
+              target={"_blank"}
+            >
+              <Button>Linkedin </Button>
+            </Link>
+            <ScrollLink to={"#about"}>
+              <SecondaryButton>About us</SecondaryButton>
+            </ScrollLink>
+          </div>
         </div>
         {/*Bubble section*/}
-        <div className={"z-10  relative top-36 right-0"}>
+        <div class="relative h-80 w-[40rem]">
+        <div
+            className={
+              " w-64 h-64 blur-2xl rounded-full absolute right-0 top-24 bg-gradient-to-r from-blue-300 to-purple-200"
+            }
+          />
+          <div
+            className={
+              " w-64 h-64 blur-2xl rounded-full absolute left-10 top-10 bg-gradient-to-r from-blue-300 to-green-200"
+            }
+          />
           <MovingDiv leftToRight={true}>
             <Image
               src={Result2}
               alt={"result1"}
               className={
-                "rounded-xl w-[25rem]  absolute -left-24 top-52 shadow-xl"
+                "rounded-xl w-[25rem] absolute top-32 left-20 shadow-xl"
+              }
+            />
+          </MovingDiv>
+          <MovingDiv leftToRight={false}>
+            <Image
+              src={Result1}
+              alt={"result2"}
+              className={"rounded-xl w-[25rem] absolute right-16 -top-20 shadow-xl"}
+            />
+          </MovingDiv>
+          
+        </div>
+        {/* <div className={"z-10 pl-32 bg-red-400 relative"}>
+
+          <MovingDiv leftToRight={true}>
+            <Image
+              src={Result2}
+              alt={"result1"}
+              className={
+                "rounded-xl w-[25rem] absolute -left-24 top-52 shadow-xl"
               }
             />
           </MovingDiv>
@@ -63,10 +96,11 @@ export default function Home() {
           />
           <div
             className={
-              "-z-20 w-64 h-64 blur-2xl rounded-full absolute top-10 -left-36 bg-gradient-to-r from-blue-300 to-green-200"
+              "-z-20 w-64 h-64 blur-2xl rounded-full absolute top-10 right-64 bg-gradient-to-r from-blue-300 to-green-200"
             }
           />
-        </div>
+
+        </div> */}
       </div>
       {/*About page*/}
       <div className={"w-full mt-64 pb-72 h-fit md:flex-colitems-center"}>
