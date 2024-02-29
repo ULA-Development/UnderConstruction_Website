@@ -10,14 +10,16 @@ export default function Header() {
         "lg:max-w-6xl w-full items-center justify-between flex text-tBlack "
       }
     >
-      <button
-        className={
-          "flex w-fit items-center hover:scale-95 transform duration-100 "
-        }
-      >
-        <Image src={Logo} alt={"Logo"} className="w-8 h-8" />
-        <text className={"font-semibold text-3xl pl-2"}>Ula Healthcare </text>
-      </button>
+      <ScrollLink to={"#home"}>
+        <button
+          className={
+            "flex w-fit items-center hover:scale-95 transform duration-100 "
+          }
+        >
+          <Image src={Logo} alt={"Logo"} className="w-8 h-8" />
+          <text className={"font-semibold text-3xl pl-2"}>Ula Healthcare </text>
+        </button>
+      </ScrollLink>
 
       <div className={"flex "}>
         <div

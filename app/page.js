@@ -51,35 +51,37 @@ export default function Home() {
           </div>
         </div>
         {/*Bubble section*/}
-        <div className={"relative mt-40 lg:mt-0 h-80 lg:w-[40rem] w-full"}>
-          {/*<div*/}
-          {/*  className={*/}
-          {/*    " w-64 h-64 blur-2xl rounded-full absolute left-1/2 top-24 bg-gradient-to-r from-blue-300 to-purple-200"*/}
-          {/*  }*/}
-          {/*/>*/}
-          {/*<div*/}
-          {/*  className={*/}
-          {/*    " w-64 h-64 blur-2xl rounded-full absolute left-[18%] -top-10 bg-gradient-to-r from-blue-300 to-green-200"*/}
-          {/*  }*/}
-          {/*/>*/}
-          {/*<MovingDiv leftToRight={true}>*/}
-          {/*  <Image*/}
-          {/*    src={Result2}*/}
-          {/*    alt={"result1"}*/}
-          {/*    className={*/}
-          {/*      "rounded-xl w-[25rem] absolute top-32 sm:right-0 md:right-1/3 lg:right-1/3   shadow-xl"*/}
-          {/*    }*/}
-          {/*  />*/}
-          {/*</MovingDiv>*/}
-          {/*<MovingDiv leftToRight={false}>*/}
-          {/*  <Image*/}
-          {/*    src={Result1}*/}
-          {/*    alt={"result2"}*/}
-          {/*    className={*/}
-          {/*      "rounded-xl w-[25rem] absolute sm:left-0 md:left-1/3 lg:left-1/3 -top-20 shadow-xl"*/}
-          {/*    }*/}
-          {/*  />*/}
-          {/*</MovingDiv>*/}
+        <div
+          className={"relative mt-40 lg:mt-0 h-80 lg:w-[40rem] m-w-full w-full"}
+        >
+          <div
+            className={
+              " w-64 h-64 blur-2xl rounded-full absolute right-1 sm:left-1/2 top-24 bg-gradient-to-r from-blue-300 to-purple-200"
+            }
+          />
+          <div
+            className={
+              " w-64 h-64 blur-2xl rounded-full absolute left-1 sm:left-[18%] -top-10 bg-gradient-to-r from-blue-300 to-green-200"
+            }
+          />
+          <MovingDiv leftToRight={true}>
+            <Image
+              src={Result2}
+              alt={"result1"}
+              className={
+                "rounded-xl w-[25rem] absolute top-32 right-1 md:right-1/3 lg:right-1/3 shadow-xl"
+              }
+            />
+          </MovingDiv>
+          <MovingDiv leftToRight={false}>
+            <Image
+              src={Result1}
+              alt={"result2"}
+              className={
+                "rounded-xl w-[25rem] absolute left-1 md:left-1/3 lg:left-1/3 -top-20 shadow-xl"
+              }
+            />
+          </MovingDiv>
         </div>
       </div>
 

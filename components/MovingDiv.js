@@ -17,7 +17,7 @@ const MovingDiv = (props) => {
   const moveAmount = Math.min(scrollOffset / 5, 40);
   return (
     <div
-      className={" "}
+      className={""}
       style={{
         transform: `translateX(${props.leftToRight ? "-" : ""}${moveAmount}px)`,
         transition: "transform 0.5s ease-out",
