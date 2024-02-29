@@ -11,7 +11,7 @@ import MovingDiv from "@/components/MovingDiv";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center flex-col sm:pl-2 sm:pr-2 pt-10 pl-10 pr-10">
+    <main className="flex min-h-screen items-center flex-col pl-2 pr-2 pt-10 md:pl-10 md:pr-10">
       <Header />
       {/*Home page*/}
       <div
@@ -21,7 +21,11 @@ export default function Home() {
         id={"home"}
       >
         {/*Info section*/}
-        <div className={"flex-col flex-1 space-y-3 justify-center flex"}>
+        <div
+          className={
+            "flex-col flex-1 text-center sm:text-left space-y-3 justify-center flex"
+          }
+        >
           <div
             className={"font-bold text-[2.5rem] leading-10 space-y-1 text-wrap"}
           >
@@ -81,7 +85,9 @@ export default function Home() {
 
       {/*About page*/}
       <div
-        className={"pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center"}
+        className={
+          "pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center text-center sm:text-left"
+        }
       >
         <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
         <div
