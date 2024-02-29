@@ -35,7 +35,7 @@ export default function Home() {
             </h1>
           </div>
           <h2 className={"text-lg text-wrap"}>
-            Ula Healthcare Systems is commited to providing the best services
+            Ula Healthcare Systems is committed to providing the best services
             for you.
           </h2>
           <div className={"flex space-x-3"}>
@@ -52,24 +52,28 @@ export default function Home() {
         </div>
         {/*Bubble section*/}
         <div
-          className={"relative mt-40 lg:mt-0 h-80 lg:w-[40rem] m-w-full w-full"}
+          className={
+            "relative bg-green mt-40 lg:mt-0 h-80 lg:w-[40rem] m-w-full w-full"
+          }
         >
-          <div
-            className={
-              " w-64 h-64 blur-2xl rounded-full absolute right-1 sm:left-1/2 top-24 bg-gradient-to-r from-blue-300 to-purple-200"
-            }
-          />
-          <div
-            className={
-              " w-64 h-64 blur-2xl rounded-full absolute left-1 sm:left-[18%] -top-10 bg-gradient-to-r from-blue-300 to-green-200"
-            }
-          />
+          {/*<div*/}
+          {/*  className={*/}
+          {/*    "w-64 h-64 blur-2xl rounded-full absolute  right-1 md:right-1/4 lg:right-[18%]  top-24 bg-gradient-to-r from-blue-300 to-purple-200"*/}
+          {/*    // right-1/4 sm:left-1/2*/}
+          {/*  }*/}
+          {/*/>*/}
+          {/*<div*/}
+          {/*  className={*/}
+          {/*    "w-64 h-64 blur-2xl rounded-full absolute left-2.5 md:left-1/3 lg:left-1/3 -top-10 bg-gradient-to-r from-blue-300 to-green-200"*/}
+          {/*    // left-1/4 sm:left-[18%]*/}
+          {/*  }*/}
+          {/*/>*/}
           <MovingDiv leftToRight={true}>
             <Image
               src={Result2}
               alt={"result1"}
               className={
-                "rounded-xl w-[25rem] absolute top-32 right-1 md:right-1/3 lg:right-1/3 shadow-xl"
+                "rounded-xl w-[20rem] sm:w-[25rem] absolute top-32 right-1 md:right-1/3 lg:right-1/4 shadow-xl"
               }
             />
           </MovingDiv>
@@ -78,7 +82,7 @@ export default function Home() {
               src={Result1}
               alt={"result2"}
               className={
-                "rounded-xl w-[25rem] absolute left-1 md:left-1/3 lg:left-1/3 -top-20 shadow-xl"
+                "rounded-xl w-[20rem] sm:w-[25rem] h-auto absolute left-1 md:left-1/3 lg:left-1/4 -top-20 shadow-xl"
               }
             />
           </MovingDiv>
