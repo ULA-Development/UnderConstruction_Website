@@ -38,7 +38,7 @@ export default function Home() {
             Ula Healthcare Systems is committed to providing the best services
             for you.
           </h2>
-          <div className={"flex space-x-3"}>
+          <div className={"justify-center sm:justify-start flex space-x-3"}>
             <Link
               href={"https://www.linkedin.com/company/ula-healthcare-systems"}
               target={"_blank"}
