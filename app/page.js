@@ -148,7 +148,7 @@ export default function Home() {
               "mt-32 lg:mt-0 space-y-5 w-full flex-col flex flex-1 pl-5 pr-5"
             }
           >
-            <h1 className={"font-bold text-[2rem]"}>What is our mission?</h1>
+            <h1 className={"font-bold text-[2rem] "}>What is our mission?</h1>
             <h2 className={"text-md text-wrap"}>
               Our mission is to address the challenges in the Ontario healthcare
               system, particularly the prolonged ER wait times and limited
@@ -156,20 +156,12 @@ export default function Home() {
               Hatchery, we leverage innovative solutions and academic expertise
               to drive positive change in the healthcare landscape.
             </h2>
-            <div className={"flex space-x-3"}>
+            <div className={"justify-center sm:justify-start flex space-x-3"}>
               <Link
                 href={"https://hatchery.engineering.utoronto.ca/"}
                 target={"_blank"}
               >
-                <Button>Learn</Button>
-              </Link>
-              <Link
-                href={
-                  "https://www.linkedin.com/company/uoftentrepreneurshiphatchery/mycompany/"
-                }
-                target={"_blank"}
-              >
-                <SecondaryButton>Hatchery</SecondaryButton>
+                <Button>Learn more</Button>
               </Link>
             </div>
           </div>
