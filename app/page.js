@@ -53,21 +53,25 @@ export default function Home() {
         {/*Bubble section*/}
         <div
           className={
-            "relative bg-green mt-40 lg:mt-0 h-80 lg:w-[40rem] m-w-full w-full"
+            "relative mt-40 lg:mt-0 h-80 lg:w-[40rem] m-w-full w-full overflow-x-clip"
           }
         >
-          {/*<div*/}
-          {/*  className={*/}
-          {/*    "w-64 h-64 blur-2xl rounded-full absolute  right-1 md:right-1/4 lg:right-[18%]  top-24 bg-gradient-to-r from-blue-300 to-purple-200"*/}
-          {/*    // right-1/4 sm:left-1/2*/}
-          {/*  }*/}
-          {/*/>*/}
-          {/*<div*/}
-          {/*  className={*/}
-          {/*    "w-64 h-64 blur-2xl rounded-full absolute left-2.5 md:left-1/3 lg:left-1/3 -top-10 bg-gradient-to-r from-blue-300 to-green-200"*/}
-          {/*    // left-1/4 sm:left-[18%]*/}
-          {/*  }*/}
-          {/*/>*/}
+          <div
+            className={
+              "flex w-full h-full absolute items-center justify-center"
+            }
+          >
+            <div
+              className={
+                "left-1/2 top-1/2 w-4/12 h-full bg-gradient-to-t from-blue-300 to-purple-200 blur-2xl"
+              }
+            />
+            <div
+              className={
+                "left-1/2 top-1/2 w-4/12 h-full bg-gradient-to-b from-blue-300 to-green-200 blur-2xl"
+              }
+            />
+          </div>
           <MovingDiv leftToRight={true}>
             <Image
               src={Result2}
