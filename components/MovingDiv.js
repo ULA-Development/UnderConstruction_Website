@@ -14,7 +14,7 @@ const MovingDiv = (props) => {
     };
   }, []);
 
-  const moveAmount = Math.min(scrollOffset / 5, 50);
+  const moveAmount = Math.min(scrollOffset / 5, 40);
   return (
     <div
       className={" "}
