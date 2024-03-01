@@ -99,7 +99,7 @@ export default function Home() {
           "pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center text-center sm:text-left"
         }
       >
-        <hr className="w-full h-0.5 bg-gray-200 rounded-full" />
+        <hr className="w-full max-w-6xl h-0.5 bg-gray-200 rounded-full" />
         <div
           className={"lg:pt-64 lg:max-w-6xl w-full flex flex-col lg:flex-row"}
           id={"about"}
