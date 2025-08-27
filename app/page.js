@@ -1,6 +1,10 @@
 import Result1 from "@/images/ResultsScreen1.png";
 import Result2 from "@/images/ResultsScreen2.png";
 import HatcheryLogo from "@/images/UofTHatcheryLogo.png";
+import EthanHeadshot from "@/images/cofounder-headshots/ethan.jpg";
+import ArmitiHeadshot from "@/images/cofounder-headshots/armiti.jpg";
+import AliHeadshot from "@/images/cofounder-headshots/ali.jpg";
+import SpencerHeadshot from "@/images/cofounder-headshots/spencer.jpg";
 import Header from "@/components/Header";
 import Button from "@/components/Button";
 import SecondaryButton from "@/components/SecondaryButton";
@@ -219,10 +223,12 @@ export default function Home() {
             <div className={"grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto"}>
               {/* Cofounder 1 */}
               <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
-                <div className={"w-32 h-32 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
-                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                  </svg>
+                <div className={"w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden"}>
+                  <Image
+                    src={EthanHeadshot}
+                    alt="Ethan McFarland"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className={"font-bold text-xl mb-2"}>Ethan McFarland</h3>
                 <p className={"text-gray-600 mb-4"}>Software and Cybersecurity Operations</p>
@@ -233,10 +239,12 @@ export default function Home() {
 
               {/* Cofounder 2 */}
               <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
-                <div className={"w-32 h-32 bg-gradient-to-br from-green-300 to-blue-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
-                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                  </svg>
+                <div className={"w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden"}>
+                  <Image
+                    src={ArmitiHeadshot}
+                    alt="Armiti Zarbakhsh"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className={"font-bold text-xl mb-2"}>Armiti Zarbakhsh</h3>
                 <p className={"text-gray-600 mb-4"}>Outreach and Healthcare Operations</p>
@@ -247,10 +255,12 @@ export default function Home() {
 
               {/* Cofounder 3 */}
               <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
-                <div className={"w-32 h-32 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
-                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
+                <div className={"w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden"}>
+                  <Image
+                    src={AliHeadshot}
+                    alt="Ali Shabani"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className={"font-bold text-xl mb-2"}>Ali Shabani</h3>
                 <p className={"text-gray-600 mb-4"}>Technology and Machine Learning Operations</p>
@@ -261,10 +271,12 @@ export default function Home() {
 
               {/* Cofounder 4 */}
               <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
-                <div className={"w-32 h-32 bg-gradient-to-br from-orange-300 to-red-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
-                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
-                  </svg>
+                <div className={"w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden"}>
+                  <Image
+                    src={SpencerHeadshot}
+                    alt="Spencer Chang"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className={"font-bold text-xl mb-2"}>Spencer Chang</h3>
                 <p className={"text-gray-600 mb-4"}>Expansion and Business Operations</p>
