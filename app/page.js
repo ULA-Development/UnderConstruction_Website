@@ -96,7 +96,7 @@ export default function Home() {
       {/*About page*/}
       <div
         className={
-          "pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center text-center sm:text-left"
+          "pt-64 lg:pb-0 pb-24 lg:w-full flex flex-col items-center text-center sm:text-left"
         }
       >
         <hr className="w-full max-w-6xl h-0.5 bg-gray-200 rounded-full" />
@@ -195,6 +195,93 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/*Cofounders page*/}
+      <div
+        className={
+          "pt-64 lg:pb-64 pb-24 lg:w-full flex flex-col items-center text-center"
+        }
+      >
+        <hr className="w-full max-w-6xl h-0.5 bg-gray-200 rounded-full" />
+        <div
+          className={"lg:pt-32 lg:max-w-6xl w-full flex flex-col items-center"}
+          id={"cofounders"}
+        >
+          <div className={"space-y-8 w-full"}>
+            <div className={"text-center space-y-4"}>
+              <h1 className={"font-bold text-[2rem]"}>Meet Our Cofounders</h1>
+              <h2 className={"text-md text-wrap max-w-2xl mx-auto"}>
+                Our team brings together diverse expertise in healthcare, technology, and business to revolutionize the Ontario healthcare system.
+              </h2>
+            </div>
+            
+            <div className={"grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto"}>
+              {/* Cofounder 1 */}
+              <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
+                <div className={"w-32 h-32 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <h3 className={"font-bold text-xl mb-2"}>Ethan McFarland</h3>
+                <p className={"text-gray-600 mb-4"}>Software and Cybersecurity Operations</p>
+                <p className={"text-sm text-gray-500"}>
+                  Software engineer with industry experience at Scotiabank and Tangerine, specializing in secure systems.
+                </p>
+              </div>
+
+              {/* Cofounder 2 */}
+              <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
+                <div className={"w-32 h-32 bg-gradient-to-br from-green-300 to-blue-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                  </svg>
+                </div>
+                <h3 className={"font-bold text-xl mb-2"}>Armiti Zarbakhsh</h3>
+                <p className={"text-gray-600 mb-4"}>Outreach and Healthcare Operations</p>
+                <p className={"text-sm text-gray-500"}>
+                  Leverages healthcare experience at SickKids and UHN to strengthen clinical outreach.
+                </p>
+              </div>
+
+              {/* Cofounder 3 */}
+              <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
+                <div className={"w-32 h-32 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3 className={"font-bold text-xl mb-2"}>Ali Shabani</h3>
+                <p className={"text-gray-600 mb-4"}>Technology and Machine Learning Operations</p>
+                <p className={"text-sm text-gray-500"}>
+                  AI researcher with Radical AI, advancing machine learning applications in healthcare.
+                </p>
+              </div>
+
+              {/* Cofounder 4 */}
+              <div className={"bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"}>
+                <div className={"w-32 h-32 bg-gradient-to-br from-orange-300 to-red-300 rounded-full mx-auto mb-6 flex items-center justify-center"}>
+                  <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+                  </svg>
+                </div>
+                <h3 className={"font-bold text-xl mb-2"}>Spencer Chang</h3>
+                <p className={"text-gray-600 mb-4"}>Expansion and Business Operations</p>
+                <p className={"text-sm text-gray-500"}>
+                  Brings experience from CI Financial and Magna, focusing on business strategy and expansion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Fixed Back to Top Button */}
+      <div className={"fixed bottom-8 right-8 z-50"}>
+        <ScrollLink to={"#home"}>
+          <SecondaryButton>Back to Top</SecondaryButton>
+        </ScrollLink>
       </div>
     </main>
   );
